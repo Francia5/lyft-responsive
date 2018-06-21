@@ -6,7 +6,9 @@
 .bck-car {
     background-image: url("../../assets/driving-at-night-shutterstock_545359150-768.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
     height: 100vh;
+    max-height: 100vh;
 }
 
 img {
@@ -14,5 +16,8 @@ img {
    width: 30%;
 }
 
+.line-down {
+    border-bottom: 1px solid gainsboro;
+}
 
 
