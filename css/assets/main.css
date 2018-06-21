@@ -1,0 +1,18 @@
+.bck-logo {
+   background: linear-gradient(#F600BD, #C500B2);
+   height: 100vh;
+}
+
+.bck-car {
+    background-image: url("../../assets/driving-at-night-shutterstock_545359150-768.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+img {
+   max-width: 100%;
+   width: 30%;
+}
+
+
+
