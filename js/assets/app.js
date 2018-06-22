@@ -20,18 +20,18 @@
 
     });
 
-
+    // Codigo Random 
     var $randomNumber = 0;
     $randomNumber = Math.random();
-    $randomNumber.val().html;
+    console.log("LAB-"+ $randomNumber);
 
-    console.log($randomNumber);
+    $("#mainButton").click(function(){
+        swal("Excelente!!", "Tu codigo de verificación es : LAB-" +  $randomNumber);
+    })
 
-    // $('#mainButton').click(function () {
-//     $('#phone').val('');
-//     $('#sign-up').hide();
-// });
-    
+
+
+
 
 
 
@@ -47,10 +47,10 @@ $(document).ready(function () {
         $('#myInput').trigger('focus')
     });
 
-
+       
+      
 
 });
-
 
 
 
