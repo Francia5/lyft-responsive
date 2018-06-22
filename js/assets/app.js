@@ -1,9 +1,11 @@
 
+
+
 // Función para deshabilitar el Botón de Next
     $("#textarea").keypress(function () {
         var valueT = $("#textarea").val().length;
         // console.log(valueT);
-        if (valueT == 9 ) {
+        if (valueT == 9) {
             $("#mainButton").prop("disabled", false);
     
         } else {
@@ -17,21 +19,15 @@
             $("#textarea").prop("disabled", true);
         }
 
-
     });
+
 
     // Codigo Random 
     var $randomNumber = 0;
-    $randomNumber = Math.random();
-    console.log("LAB-"+ $randomNumber);
-
-    $("#mainButton").click(function(){
-        swal("Excelente!!", "Tu codigo de verificación es : LAB-" +  $randomNumber);
-    })
-
-
-
-
+    $randomNumber = parseInt(Math.random() * 1000);
+    
+    
+    //  console.log("LAB-"+ $randomNumber);
 
 
 
@@ -42,14 +38,16 @@ $(document).ready(function () {
     }, 1000);
 
         // Modal
-
     $('#myModal').on('shown.bs.modal', function () {
         $('#myInput').trigger('focus')
     });
 
-       
-      
+        // Alert
+    $("#mainButton").click(function () {
+        swal("Excelent!!", "Your code is : LAB-" + $randomNumber);
+    })
 
+    
 });
 
 
