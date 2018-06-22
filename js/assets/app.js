@@ -41,33 +41,40 @@
 
     
 // };
-i = 0;
-$(document).ready(function () {
+
     $("#textarea").keypress(function () {
         var valueT = $("#textarea").val().length;
         console.log(valueT);
-        if (valueT >= 10 ) {
-            $("#mainButton").removeAttr("disabled");
-            $("textarea").attr("disabled");
+        if (valueT == 9 ) {
+            $("#mainButton").prop("disabled", false);
+    
+        } else {
+            $("#mainButton").prop("disabled", true);
         }
         
-        
+        if (valueT <= 10) {
+            $("#textarea").prop("disabled", false);
+
+        } else {
+            $("#textarea").prop("disabled", true);
+        }
+
 
     });
+
+
+
+
+$(document).ready(function () {
+    setTimeout(function () {
+        $("#first-lyft").fadeOut(1800);
+    }, 1000);
+
+    $('#myModal').on('shown.bs.modal', function () {
+        $('#myInput').trigger('focus')
+    });
+
+   /* $("#textarea").keypress(textLegth)*/
+
 });
-
-
-
-// $(document).ready(function () {
-//     setTimeout(function () {
-//         $("#first-lyft").fadeOut(1800);
-//     }, 1000);
-
-//     $('#myModal').on('shown.bs.modal', function () {
-//         $('#myInput').trigger('focus')
-//     });
-
-//    /* $("#textarea").keypress(textLegth)*/
-
-// });
 
