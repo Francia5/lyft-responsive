@@ -1,50 +1,8 @@
 
-
-// var mainButton = document.getElementById('mainButton');
-
-// mainButton.addEventListener('click', function () {
-//     var textArea = document.getElementById('textArea').value;
-//     document.getElementById('textArea').value = '';
-
-//     if (textArea.length == 0 || textArea == null || textArea.length > 10) {
-//         return false;
-//         console.log(textArea);
-        
-//     }
-
-// });
-
-/*textarea.addEventListener('click', function () {
-    var textArea = document.getElementById('textarea').value;
-    document.getElementById('textArea').value = '';
-
-    //Desabilitar boton twittear si no hay texto ||  si el texto tiene una extension más larga de 140 caracteres
-    if (textArea.length == 0 || textArea == null || textArea.length > 10) {
-        return false;
-        console.log(textArea);
-        
-    }
-};*/
-
-// var textLegth = function(e) {
-//     console.log(e);
-//     var telephone = $("#mainButton").val();
-//     // console.log(telephone);
-//     if (telephone.length < 10 && typeof (telephone) !== "number") {
-//         console.log(telephone);
-        
-//         return false;
-//      } else {
-//         return true;
-//     }
-    
-
-    
-// };
-
+// Función para deshabilitar el Botón de Next
     $("#textarea").keypress(function () {
         var valueT = $("#textarea").val().length;
-        console.log(valueT);
+        // console.log(valueT);
         if (valueT == 9 ) {
             $("#mainButton").prop("disabled", false);
     
@@ -63,18 +21,37 @@
     });
 
 
+    var $randomNumber = 0;
+    $randomNumber = Math.random();
+    $randomNumber.val().html;
+
+    console.log($randomNumber);
+
+    // $('#mainButton').click(function () {
+//     $('#phone').val('');
+//     $('#sign-up').hide();
+// });
+    
+
 
 
 $(document).ready(function () {
     setTimeout(function () {
+        // Splash
         $("#first-lyft").fadeOut(1800);
     }, 1000);
+
+        // Modal
 
     $('#myModal').on('shown.bs.modal', function () {
         $('#myInput').trigger('focus')
     });
 
-   /* $("#textarea").keypress(textLegth)*/
+
 
 });
+
+
+
+
 
