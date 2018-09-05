@@ -29,7 +29,11 @@
     $("#verify").click(function(){
         
         if ($("#recipient-name").val() == $randomNumber) {
-        swal("Excelent!!" );
+            swal("Good job!", "You clicked the button!", "success");
+        } else {
+            swal("!Try again¡", {
+                buttons: ["cambiar", true],
+            });
         }
 
     })
